@@ -1,22 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-
-import Animal from './components/Animal';
 import AnimalList from './components/AnimalList';
 
 const ListofAnimals =[ 
   {
+      id: 100,
       name: "Violet",
       species: "pit mix"
   },
   {
+      id: 202,
       name:"kae",
       species: "dog"
   },
   {
+      id: 303, 
       name:"amber",
       species: "dog",
-      photos: "placedog"
+      photo: "https://placedog.net/640/480?r"
   }
 ];
 

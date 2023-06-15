@@ -11,8 +11,8 @@ const AnimalList =({ListofAnimals}) => {
         <h2>Animal List</h2>
         <ul className='AnimalList__list'>
         {
-            ListofAnimals.map(creature =>(
-                <li>
+            ListofAnimals.map((creature) =>(
+                <li key={creature.id}>
                     <Animal
                         name={creature.name}
                         species={creature.species}
@@ -29,6 +29,7 @@ AnimalList.propTypes ={
     ListofAnimals: PropTypes.arrayOf(
         PropTypes.shape({
         name: PropTypes.string,
+        id: PropTypes.number.isRequired,
         species: PropTypes.string.isRequired,
         adopted: PropTypes.bool,
         age: PropTypes.number,
